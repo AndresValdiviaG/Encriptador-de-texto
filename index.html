@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Icono.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+    <!--Encabezado-->
+    <header class="encabezado">
+      <img class="logo" src="img/AV log.png" alt="logo de andres" />
+      <h1 class="encabezado-titulo">Encriptador</h1>
+    </header>
+
+    <!--Texto de ingreso-->
+    <div class="contenedor">
+      <section class="cajadetexto">
+        <textarea
+          class="cajita"
+          id=""
+          placeholder="Texto a encriptar"
+        ></textarea>
+        <p class="advertencia">
+          ❕ Solo letras minúsculas, sin acentos ni caracteres especiales
+        </p>
+        <div class="botones">
+          <button class="boton b-encriptar" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="boton b-desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <!--Resultado-->
+      <section class="cajadere">
+        <div class="resultado">
+          <textarea id="txtEspacio" class="espacio" readonly></textarea>
+          <div class="botones">
+            <button class="boton" id="copiar" onclick="btnCopiar()">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Pie de pagina 1-->
+    <footer>
+      <ul class="redes">
+        <li>
+          <a href="https://www.linkedin.com/in/andres-valdivia-/" target="_blank" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank" class="github"><i class="fa fa-github fa-fw"></i></a>
+        </li>
+      </ul>
+      <p class="rodapie">
+        Challenge One Oracle <span> - Por Andres Valdivia G. </span>
+      </p>
+    </footer>
+  </body>
+
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
+</html>
